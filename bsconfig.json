@@ -1,11 +1,17 @@
 {
   "name": "bs-date-fns",
   "bsc-flags": ["-bs-super-errors"],
-  "reason": {"react-jsx": 2},
+  "reason": { "react-jsx": 2 },
   "refmt": 3,
-  "sources": [
+  "package-specs": [
     {
-      "dir": "src",
+      "module": "es6",
+      "in-source": true
     }
   ],
+  "sources": [
+    {
+      "dir": "src"
+    }
+  ]
 }

@@ -3,21 +3,27 @@
   "version": "0.1.4",
   "description": "Bucklescript bindings to date-fns",
   "scripts": {
-    "bs-build": "bsb -clean-world -make-world"
+    "bs-build": "bsb -clean-world -make-world",
+    "base-line":
+      "NAME=\"base-line\" && webpack src/$NAME.js --mode=production --output=dist/$NAME.js",
+    "bs":
+      "NAME=\"bs\" && webpack src/$NAME.js --mode=production --output=dist/$NAME.js",
+    "bs-optimized":
+      "NAME=\"bs.optimized\" && webpack src/$NAME.js --mode=production --output=dist/$NAME.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/SllyQ/bs-date-fns.git"
   },
-  "keywords": [
-    "reason",
-    "reasonml",
-    "bucklescript",
-    "date-fns"
-  ],
+  "keywords": ["reason", "reasonml", "bucklescript", "date-fns"],
   "author": "Arnoldas Sidlauskas <arnoldas.sid@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "date-fns": "^1.29.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.0.0",
+    "webpack-cli": "^2.0.9",
+    "bs-platform": "^2.2.1"
   }
 }
